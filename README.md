@@ -5,9 +5,7 @@ www.dio.me
 Sistema gerenciador de tarefas, a qual você poderá cadastrar uma lista de tarefas que permitirá organizar melhor a sua rotina. Para isso, foi utilizado Entity Framework, ASP.NET e SQL Server.
 
 ## Contexto
-Esse sistema gerenciador de tarefas,
-fornece uma lista de tarefas com CRUD, ou seja, ele permiti a você obter os registros, criar, salvar e deletar.
-A aplicação foi feita como MVC (Model, View, Controller), com intuito de trazer uma exibição de API de maneira mais visual para o usuário.
+O sistema disponibiliza uma API com endpoints para gerenciamento das tarefas. Utiliza o padrão MVC (Model, View, Controller) para fornecer uma interface visual amigável.
 
 A sua classe principal, ou a Entidade, contém as seguintes propriedades:
 
@@ -57,19 +55,18 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
          
    
     
- `2 - Tenha o SQL Server instalado e, se tiver, coloque-o em execução.`
+ `2 - Certifique-se de que o SQL Server está instalado e em execução.`
 
- `3 - Instale o EF (Entity Framework) CLI:`
+ `3 - Instale o Entity Framework CLI:`
 
     dotnet tool install --global dotnet-ef
  
-  `4 - Instale todas as dependêndias do projeto`
+  `4 - Instale as dependências do projeto:`
   
       dotnet restore
   
-  `5 - Altere o arquivo appsettings.Development.json com o nome do seu Banco de Dados`
+  `5 - Edite o arquivo `appsettings.Development.json` com as informações do seu Banco de Dados:`
  
-
   ```json
     {
       "ConnectionStrings":{
@@ -78,11 +75,12 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
     }
 
   ```
-  `6 - Faça um migrations`
+
+  `6 - Execute a migração:`
  
     dotnet-ef migrations add AdicionandoTabelaTarefas
 
-  `7 - Adicione o migrations ao seu SQL Server`
+  `7 - Aplique a migração ao seu SQL Server`
 
     dotnet-ef database update
 
