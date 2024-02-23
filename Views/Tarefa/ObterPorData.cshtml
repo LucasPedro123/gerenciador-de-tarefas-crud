@@ -1,0 +1,29 @@
+@model IEnumerable<project_mvc.Models.Tarefa>
+
+@{
+    ViewData["Title"] = "Lista de Tarefas por Data";
+}
+
+<h1>Lista de Tarefas por Data</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Descrição</th>
+            <th>Data</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Titulo</td>
+                <td>@item.Descricao</td>
+                <td>@item.Data.ToShortDateString()</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
