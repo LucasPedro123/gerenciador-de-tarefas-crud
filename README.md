@@ -57,6 +57,8 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
     
  `2 - Certifique-se de que o SQL Server está instalado e em execução.`
 
+
+
  `3 - Instale o Entity Framework CLI:`
 
     dotnet tool install --global dotnet-ef
@@ -65,7 +67,7 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
   
       dotnet restore
   
-  `5 - Edite o arquivo `appsettings.Development.json` com as informações do seu Banco de Dados:`
+  `5 - Edite o arquivo appsettings.Development.json com as informações do seu Banco de Dados:`
  
   ```json
     {
