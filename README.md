@@ -1,5 +1,4 @@
-# DIO - Trilha .NET - API e Entity Framework
-www.dio.me
+# ASP.NET - API e Entity Framework
 
 ## Descrição do projeto
 Sistema gerenciador de tarefas, a qual você poderá cadastrar uma lista de tarefas que permitirá organizar melhor a sua rotina. Para isso, foi utilizado Entity Framework, ASP.NET e SQL Server.
